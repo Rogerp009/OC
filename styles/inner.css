@@ -1,0 +1,233 @@
+/* 
+
+Neon - CSS File
+
+USE THIS STYLE SHEET FOR INNER PAGE
+
+*/
+
+/* Page Navi*/
+
+
+/* BLOG */
+.post{padding:0 0 0 0; margin:0 0 50px 0}
+.posttitle, .posttitle a, .posttitle a:hover, .posttitle a:visited{ text-decoration:none; color:#252525}
+.postimg{float:left; width:300px; height:210px; overflow:hidden; position:relative}
+.postimg img{max-width:100%;}
+.posttag{
+	display:block;
+	background:#f7cf27;
+	opacity:0.9;
+	position:absolute;
+	z-index:11;
+	top:20px;
+	left:0px;
+	font-size:16px;
+	padding:10px 20px;
+	text-align:center;
+	color:#252525
+}
+.entry-content{padding:0 0 0 0; clear:both; background:#f7f7f8}
+.posttext{overflow:hidden; padding:20px 25px 20px 25px}
+.postdate, .postcomment, .postcomment a, .postcomment a:visited{color:#858585;}
+.postcat{float:left;}
+.postcat, .postcat a, .postcat a:visited{color:#555555;}
+.post .button{float:right; padding:4px 12px}
+.entry-utility{background:url(../images/pattern_title.gif) repeat; margin-top:8px; padding:12px 25px; text-align:right; line-height:25px;}
+.entry-utility a, .entry-utility a:visited{color:#555;}
+.valignmiddle{vertical-align:middle;}
+
+#singlepost .post{margin-bottom:50px; padding-bottom:0}
+#singlepost .postimg{ float:none; width:auto; height:auto}
+
+
+
+.navigation {
+	line-height: 20px;
+}
+.navigation a:link,
+.navigation a:visited {
+	text-decoration: none;
+	color:#666
+}
+.navigation a:active,
+.navigation a:hover {}
+.nav-previous {
+	float: left;
+	font-size:13px;
+	font-family:"Ubuntu", Arial;
+}
+.nav-next {
+	float: right;
+	text-align: right;
+	font-size:13px;
+	font-family:"Ubuntu", Arial;
+}
+.nav-previous a, .nav-previous a:visited, .nav-next a, .nav-next a:visited{
+	background:#555;
+	color:#ebebeb  !important;
+	padding:6px 12px;
+	display:block
+}
+
+.nav-previous a:hover, .nav-next a:hover{
+	color:#252525  !important;
+	background:#f7cf27;
+}
+
+.commentlist{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.commentlist ol{
+	list-style-type:none;
+	padding:10px 0 0 90px;
+	margin:0;
+}
+
+.commentlist li{
+	position:relative;
+	padding:0 0 10px 0;
+	
+}
+.commentlist li li{
+	position:relative;
+	padding:0;
+}
+
+.avatar{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.tuser{font-size:14px;}
+.tdate{ font-size:10px; color:#878787; display:block; padding-bottom:8px}
+.comment-body{width:auto; margin-bottom:20px !important; margin-left:80px; padding:20px; background:#f7f7f7}
+.comment-body p{}
+.comment-body .more{ padding:0px 0px; font-size:10px; color:#555}
+#commentform label{display:block}
+#commentform .text-input{
+	margin-bottom:8px;
+	padding:8px 5px;
+	vertical-align:middle;
+	width:50%
+}
+#commentform .textarea{
+	margin-bottom:20px;
+	padding:8px 5px;
+	vertical-align:top;
+	width:80%
+}
+
+
+/* PORTFOLIO */
+#ts-display-pf-col{list-style-type:none; padding:0; margin:0; }
+#ts-display-pf-col li{width:220px;  float:left}
+#ts-display-pf-col li.nomargin{margin-right:0;}
+#ts-display-pf-col .ts-display-pf-img{	width:220px; height:170px;}
+.ts-display-pf-img{
+	width:220px;
+	height:170px;
+	position:relative;
+	overflow: hidden !important;
+	position: relative;
+	background:#555555;
+	font-family:'Ubuntu', Arial;
+}
+.ts-display-pf-img img {
+	width: 220px;
+	height: 170px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+	z-index:10;
+}
+.ts-display-pf-img .pftag{
+	display:block;
+	background:#f7cf27;
+	opacity:0.9;
+	position:absolute;
+	z-index:11;
+	top:20px;
+	left:0px;
+	font-size:16px;
+	padding:10px 20px;
+	text-align:center;
+	color:#252525
+}
+.ts-display-pf-img .pftag a, .ts-display-pf-img .pftag a:visited, .ts-display-pf-img .pftag a:hover{color:#252525; text-decoration:none}
+.caption_slide{text-align:center; color:#eaeaea; margin-top:70px}
+.caption_slide.nopftag{ margin-top:45px}
+.caption_slide h2{color:#eaeaea; margin:0 0 8px 0; font-size:20px;}
+.caption_slide p{ margin:0 0 5px 0; font-size:14px}
+.caption_slide a:hover{text-decoration:none;}
+#filter{line-height:22px; list-style-type:none; padding:0; margin:0 0 30px 0; float:left }
+#filter li{list-style-type:none; float:left; margin-right:10px}
+#filter li a, #filter li a:visited{color:#555; background:#f5f5f5; padding:4px 12px}
+#filter li a:hover, #filter li.selected-1 a{text-decoration:none; background:#ebebeb}
+.image-grid {  width: 940px; float:left;}
+.image-grid:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.image-grid li {
+  width: 220px;
+  margin: 0 20px 20px 0;
+  float: left;
+  height:170px;
+  overflow: hidden;
+}
+.image-grid li.nomargin{margin-right:0 !important;}
+
+/* slideshow and client info in single portfolio */
+.clienturl{margin-top:-15px;}
+#portfolio-gallery #frame-slider-portfolio{width:608px; height:408px; float:left; position:relative; margin-right:20px;}
+#portfolio-gallery #frame-slider-portfolio img{ width:608px;}
+#portfolio-gallery #frame-slider-portfolio #sliderportfolio{list-style-type:none; margin:0; padding:0; height:408px; }
+#portfolio-gallery #frame-slider-portfolio #slide-nav{position:absolute;  bottom:-30px; z-index:30; width:100%; text-align:center;}
+#portfolio-gallery #slide-nav a{
+	background: url(../images/but-slide.png) no-repeat scroll 50% 50%;
+	display:inline;
+	display:inline-block;
+	zoom:1;
+	font-size:0px;
+	width:11px;
+	height:11px;
+	margin:3px;
+	outline-style:none;
+	outline-width:medium;
+	padding:0px;
+	cursor:pointer;
+}
+
+#portfolio-gallery #slide-nav .activeSlide {background: url(../images/but-slide-selected.png) no-repeat scroll 0% 50%;}
+
+
+
+/* CONTACT */
+form{margin:0; padding:0;}
+fieldset{border:0px;}
+#contactform{position:relative; }
+
+#contactform label{ display:block;}
+span.error{color:red;text-align:left; font-size:11px; float:left;}
+span.required{color:#999; font-style:italic;}
+#contactform .text-input{
+	margin-bottom:6px;
+	font-size:11px;
+}
+#contactform textarea{
+	margin-bottom:7px;
+	padding:8px 5px;
+	font-size:11px;
+	width:90%
+}
+#message{ margin-left:0px;}
+#message h2{}
+#message p{margin:6px 0px; }
+#contactform .button{ cursor:pointer; margin:15px 0 0 0;}

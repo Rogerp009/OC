@@ -1,0 +1,32 @@
+/* 
+
+Neon - CSS File
+
+CHANGE COLOR STYLE
+
+*/
+
+body{background:#d0d0d7;}
+
+/* link color */
+a, a:visited{color:#aaaaaa}
+.colortext, .colortext:visited{color:#f7cf27 !important}
+
+/* heading */
+h1, h2, h3, h4, h5, h6,
+.pagetitle, .pagetitle a, .pagetitle a:visited{color:#252525}
+
+/* footer heading */
+#main-footer .widget-title{color:#d0d0d0;}
+		
+/* menu top color */
+.sf-menu a:visited{color:#9a9a9f;}/* 1st level */
+.sf-menu a:hover, .sf-menu li a.current{color:#252525;}/* 1st level */
+.sf-menu li.sfHover a:hover{color:#252525;}/* 2nd level */
+		
+/* button & label box */
+#slideprev:hover, #slidenext:hover, .button:hover, input[type="submit"]:hover,
+.nav-previous a:hover, .nav-next a:hover, #sidebar li li a:hover, .ts-display-pf-img .pftag, .posttag, .coverblock .tag{background-color:#f7cf27;}
+.menu_box li:hover, .menu_box li.current{background-color:#f7cf27; border:solid 1px #f7cf27;}
+
+		

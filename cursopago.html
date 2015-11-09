@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>OC / Cursos Pagos</title>
+
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/inner.css" rel="stylesheet" type="text/css" />
+<link href="styles/color.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	//Menu
+	jQuery("ul.sf-menu").supersubs({ 
+	minWidth		: 12,		// requires em unit.
+	maxWidth		: 27,		// requires em unit.
+	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+						   // due to slight rounding differences and font-family 
+	}).superfish();  // call supersubs first, then superfish, so that subs are 
+					 // not display:none when measuring. Call before initialising 
+					 // containing tabs for same reason. 
+					 
+   //jQuery tab
+	jQuery(".tab-content").hide(); //Hide all content
+	jQuery("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	jQuery(".tab-content:first").show(); //Show first tab content
+	//On Click Event
+	jQuery("ul.tabs li").click(function() {
+		jQuery("ul.tabs li").removeClass("active"); //Remove any "active" class
+		jQuery(this).addClass("active"); //Add "active" class to selected tab
+		jQuery(".tab-content").hide(); //Hide all tab content
+		var activeTab = jQuery(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		jQuery(activeTab).fadeIn(200); //Fade in the active content
+		return false;
+	});
+	
+	//jQuery toggle
+	jQuery(".toggle_container").hide();
+	jQuery("h2.trigger").click(function(){
+		jQuery(this).toggleClass("active").next().slideToggle("slow");
+	});
+
+
+	
+});
+</script>
+</head>
+<body>
+
+<div id="outer-container">
+	<div id="container">
+    	<div id="top">
+        	<div id="logo"><a href="index.html"><img src="images/logo.png" alt=""  /></a></div><!-- end #logo -->
+            <div id="nav">
+                <ul id="topnav" class="sf-menu">
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="portfolio.html">Inicio de Sesion</a></li>
+                      <li><a href="fullwidth.html"  class="current">Cursos</a>
+                        <ul>
+                            <li><a href="cursopago.html"  class="current">Pagos</a></li>
+                            <li><a href="cursolibre.html">Libres</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul><!-- #topnav -->
+            </div><!-- #nav -->	
+        </div><!-- end #top -->
+		<div id="content" class="innerpage">
+        	<div id="main">
+                
+            	<h1 class="pagetitle"><span>Cursos Pagos</span></h1>
+                
+                <div class="one_half firstcols">
+                    <h4>Cursos Pago</h4>
+                    <p><img class="alignleft" src="images/content/tp-img.jpg" alt="" />Poseemos la mas amplia variedad de cursos libres que pueda existir, en base online, con la mas amplia informacion, todo lo que pueda necesitar para aprender y concretar su conocimiento adquirido. Todos los cursos cuentan con: </p>
+                    <p>&nbsp;</p>
+                    <p><strong>SUBSCRIBIRSE</strong></p>
+              </div>
+                <div class="one_half lastcols">
+                    <h4>Cursos Pagos</h4>
+                    <table>
+                    <tbody>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>dias</th>
+                    <th>autor</th>
+                    </tr>
+                    <tr>
+                    <td>Curso1</td>
+                    <td>22</td>
+                    <td>Division 3</td>
+                    </tr>
+                    <tr class="even">
+                    <td>Curso 2</td>
+                    <td>23</td>
+                    <td>Division 3</td>
+                    </tr>
+                    <tr>
+                    <td>Curso 3</td>
+                    <td>29</td>
+                    <td>Division 3</td>
+                    </tr>
+                    <tr class="even">
+                    <td>Curso 4</td>
+                    <td>22</td>
+                    <td>Division 3</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+                
+                <div class="separator line"></div>
+                <h4>&nbsp;</h4> 
+            </div>    	
+		</div>
+		<div id="footer">
+			<div id="main-footer">
+            	<div class="footcol1">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title"><span class="title-bg">Contacto</span></h2>
+                        	<div class="textwidget">
+                               <img src="images/icon1.png" alt="" class="alignleft" />
+                               <p class="indenleft">Porlamar, asassa<br/>
+                                asasas<br/>
+                             asasasa</p>
+                                <img src="images/icon2.png" alt="" class="alignleft" /><p>+58xxxxx</p>
+                                <img src="images/icon3.png" alt="" class="alignleft" /><p>mail@oc.com.ve</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            	<div class="footcol2">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title"><span class="title-bg">Boletin</span></h2>
+                        	<div class="textwidget">
+                                <form action="#" method="post" id="newsletter">
+                                <div><input type="text" size="26" /><input type="submit" value="Ok" /></div>
+                                Subscribete a nuestro boletin mensual.
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            	<div class="footcol3">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title"><span class="title-bg">Cursos PDF</span></h2>
+                        	<div class="textwidget">
+                                <img src="images/content/pdf.png" alt="" class="alignleft"/>
+                                <p>Descarga, y conoce mas.</p>
+                                <a href="#" class="colortext">click aqui para descargar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            	
+                <div class="clear"></div>
+            </div>
+		</div>
+        </div>
+</div>
+		
+</body>
+</html>

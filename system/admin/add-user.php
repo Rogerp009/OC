@@ -1,0 +1,28 @@
+<?php 
+
+require_once('../web.config.php'); require_once(ROOT_PATH.'global.php');
+$auth_roles = array('superadmin','Maximus');
+require_once(ROOT_PATH.'modules/authorization/auth.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Añadir Nuevo Usuario</title>
+
+<link rel="stylesheet" type="text/css" href="<?php echo ADMIN_STYLE; ?>"/>
+
+<link rel="shortcut icon" href="../images/favicon.gif"/>
+<link rel="shortcut icon" href="../images/favicon.ico"/>
+<?php require_once(ROOT_PATH.'admin/themes/shared.js.php'); ?>
+</head>
+<body>
+<div id="Header">
+	<?php require_once(ROOT_PATH.'admin/themes/header.control.php'); ?>
+</div>
+<div id="Menu">
+	<?php require_once(ROOT_PATH.'admin/themes/top_menu.control.php'); ?>
+</div>
+<?php require_once(ROOT_PATH.'admin/modules/add_user/add_user.html.php'); ?>
+</body>
+</html>

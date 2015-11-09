@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>OC / Online Courses</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+<link href="styles/color.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	//slider
+	 jQuery('#slider').cycle({
+		timeout: 6000,  // milliseconds between slide transitions (0 to disable auto advance)
+		fx:      'scrollVert', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speed:   2000,  // speed of the transition (any valid fx speed value) 
+		pause:   0,	  // true to enable "pause on hover"
+		next: '#slidenext',  // element, jQuery object, or jQuery selector string for the element to use as event trigger for next slide
+		prev: '#slideprev',  // element, jQuery object, or jQuery selector string for the element to use as event trigger for previous slide 
+		cleartype:!$.support.opacity,  // true if clearType corrections should be applied (for IE) 
+		cleartypeNoBg:   true, // set to true to disable extra cleartype fixing (leave false to force background color setting on slides)
+		pauseOnPagerHover: 0 // true to pause when hovering over pager link
+	});	
+	
+	//Menu
+	jQuery("ul.sf-menu").supersubs({ 
+	minWidth		: 12,		// requires em unit.
+	maxWidth		: 27,		// requires em unit.
+	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+						   // due to slight rounding differences and font-family 
+	}).superfish();  // call supersubs first, then superfish, so that subs are 
+					 // not display:none when measuring. Call before initialising 
+					 // containing tabs for same reason. 
+					 
+	//sliding box
+	jQuery('.coverblock').hover(function(){
+		jQuery(".cover", this).stop().animate({top:'380px', left:'0px'},{queue:false,duration:800});
+
+	}, function() {
+		jQuery(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:800});
+	});
+
+	
+});
+</script>
+</head>
+<body>
+
+<div id="outer-container">
+	<div id="container">
+    	<div id="top">
+        	<div id="logo"><a href="index.html"><img src="images/logo.png" alt=""  /></a></div><!-- end #logo -->
+            <div id="nav">
+                <ul id="topnav" class="sf-menu">
+                    <li><a href="index.html" class="current">Home</a></li>
+
+                    <li><a href="portfolio.html">Inicio de Sesion</a></li>
+                                        <li><a href="fullwidth.html">Cursos</a>
+                        <ul>
+                            <li><a href="#">Pagos</a></li>
+                            <li><a href="#">Libres</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul><!-- #topnav -->
+            </div><!-- #nav -->	
+        </div><!-- end #top -->
+        <div id="header">
+        	<div id="slider_container">
+            	<ul id="slider">
+                	<li><img src="images/content/slide1.jpg" alt="" /></li>
+                    <li><img src="images/content/slide2.jpg" alt="" /></li>
+                    <li><img src="images/content/slide3.jpg" alt="" /></li>
+                </ul>
+                <span id="slideprev"></span>
+                <span id="slidenext"></span>
+            </div><!-- end #slider_container -->
+        </div><!-- end #header -->
+		<div id="content">
+        	<div id="main">
+            	<h2 class="title_with_pattern"><span>Links Rápidos</span></h2>
+                <ul class="menu_box">
+                    <li><a href="system/" ><span>Usuarios<br/> Registrados</span><span class="more"></span></a></li> 
+     
+                    <li><a href="system/" ><span>Registro<br/> de Usuarios</span><span class="more"></span></a></li> 
+                    
+                    <li><a href="system/" ><span>Facilitadores<br/> </span><span class="more"></span></a></li> 
+                   
+                    <li><a href="system/" ><span>Admin's<br/> </span><span class="more"></span></a></li> 
+                   
+                    <li><a href="system/" ><span>Solicitud<br/> de Información</span><span class="more"></span></a></li> 
+
+                </ul>
+                
+                <div class="separator">
+               </div>
+                <div class="separator"></div>
+                
+            	
+               
+                
+                <div class="clear"></div><!-- clear float --> 
+            </div><!-- end #main -->     	
+		</div>
+		<div id="footer">
+			<div id="main-footer">
+            	<div class="footcol1">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title"><span class="title-bg">Contacto</span></h2>
+                        	<div class="textwidget">
+                               <img src="images/icon1.png" alt="" class="alignleft" />
+                               <p class="indenleft">Porlamar, asassa<br/>
+                                asasas<br/>
+                             asasasa</p>
+                                <img src="images/icon2.png" alt="" class="alignleft" /><p>+58xxxxx</p>
+                                <img src="images/icon3.png" alt="" class="alignleft" /><p>mail@oc.com.ve</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            	<div class="footcol2">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title"><span class="title-bg">Boletin</span></h2>
+                        	<div class="textwidget">
+                                <form action="#" method="post" id="newsletter">
+                                <div><input type="text" size="26" /><input type="submit" value="Ok" /></div>
+                                Subscribete a nuestro boletin mensual.
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            	<div class="footcol3">
+                	<ul>
+                    	<li class="widget-container">
+                        	<h2 class="widget-title"><span class="title-bg">Cursos PDF</span></h2>
+                        	<div class="textwidget">
+                                <img src="images/content/pdf.png" alt="" class="alignleft"/>
+                                <p>Descarga, y conoce mas.</p>
+                                <a href="#" class="colortext">click aqui para descargar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            	
+                <div class="clear"></div>
+            </div><!-- end #main-footer -->
+		</div><!-- end #footer -->
+	</div><!-- end #container -->
+</div><!-- end #outer-container -->
+		
+</body>
+</html>
